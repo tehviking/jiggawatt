@@ -1,1 +1,0 @@
-/Users/lydiaguarino/Desktop/code/jiggawatt/jiggawatt/tmp/funnel-input_base_path-WEjOXE5L.tmp/0/jiggawatt/models/scenario.js

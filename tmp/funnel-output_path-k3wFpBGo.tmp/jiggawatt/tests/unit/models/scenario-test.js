@@ -1,1 +1,0 @@
-/Users/lydiaguarino/Desktop/code/jiggawatt/tmp/babel-cache_path-WHF9Efbk.tmp/jiggawatt/tests/unit/models/scenario-test.js

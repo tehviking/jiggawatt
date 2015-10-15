@@ -1,1 +1,0 @@
-/Users/lydiaguarino/Desktop/code/jiggawatt/tmp/babel-cache_path-OJnv8SL4.tmp/modules/ember-cli-app-version/components/app-version.js

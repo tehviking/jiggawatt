@@ -1,1 +1,0 @@
-/Users/lydiaguarino/Desktop/code/jiggawatt/jiggawatt/tmp/babel-cache_path-YbGZEfJV.tmp/jiggawatt/tests/helpers/start-app.js

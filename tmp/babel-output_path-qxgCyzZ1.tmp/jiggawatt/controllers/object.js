@@ -1,1 +1,0 @@
-/Users/lydiaguarino/Desktop/code/jiggawatt/tmp/babel-cache_path-jMFKsMSj.tmp/jiggawatt/controllers/object.js

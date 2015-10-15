@@ -1,1 +1,0 @@
-/Users/lydiaguarino/Desktop/code/jiggawatt/jiggawatt/tmp/jshinter-output_path-zUc8afa9.tmp/unit/models/scenario-test.jshint.js

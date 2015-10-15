@@ -1,1 +1,0 @@
-/Users/lydiaguarino/Desktop/code/jiggawatt/tmp/jshinter-cache_path-TLuZZ1a5.tmp/unit/routes/scenarios/scenario/character-select-test.jshint.js

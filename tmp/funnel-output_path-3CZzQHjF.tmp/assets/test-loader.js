@@ -1,1 +1,0 @@
-/Users/lydiaguarino/Desktop/code/jiggawatt/tmp/funnel-input_base_path-1nTewuvA.tmp/0/bower_components/ember-cli-test-loader/test-loader.js

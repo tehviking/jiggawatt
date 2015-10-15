@@ -1,1 +1,0 @@
-/Users/lydiaguarino/Desktop/code/jiggawatt/jiggawatt/bower_components/ember-cli-test-loader/test-loader.js

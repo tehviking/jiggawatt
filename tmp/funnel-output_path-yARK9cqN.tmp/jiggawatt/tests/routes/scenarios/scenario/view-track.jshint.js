@@ -1,1 +1,0 @@
-/Users/lydiaguarino/Desktop/code/jiggawatt/tmp/jshinter-cache_path-tCNdenjl.tmp/routes/scenarios/scenario/view-track.jshint.js
