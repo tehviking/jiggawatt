@@ -1,0 +1,1 @@
+/Users/lydiaguarino/Desktop/code/jiggawatt/tmp/babel-cache_path-l7pRCjEe.tmp/modules/ember-cli-app-version/initializer-factory.js

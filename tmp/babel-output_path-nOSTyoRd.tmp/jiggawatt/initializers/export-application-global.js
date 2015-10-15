@@ -1,0 +1,1 @@
+/Users/lydiaguarino/Desktop/code/jiggawatt/tmp/babel-cache_path-ton6jSoo.tmp/jiggawatt/initializers/export-application-global.js

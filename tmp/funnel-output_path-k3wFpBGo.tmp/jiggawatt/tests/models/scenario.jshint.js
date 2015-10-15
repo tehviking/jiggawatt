@@ -1,0 +1,1 @@
+/Users/lydiaguarino/Desktop/code/jiggawatt/tmp/jshinter-cache_path-fwYGOxAn.tmp/models/scenario.jshint.js
