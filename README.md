@@ -128,8 +128,8 @@ Here's a sample dataset of one scenario. There are 9 total scenarios.
 ```javascript
 {
   scenarios: [{
-    id: 1
-    name: "Visionary CEO"
+    id: 1,
+    name: "Visionary CEO",
     stats: {
       skill: 2,
       synthesis: 3,
@@ -144,7 +144,7 @@ Here's a sample dataset of one scenario. There are 9 total scenarios.
     },
     results: [{
       years: 2,
-      title: "Jr. Developer"
+      title: "Jr. Developer",
       income: 1,
       stress: 5,
       freeTime: 4,
@@ -153,7 +153,7 @@ Here's a sample dataset of one scenario. There are 9 total scenarios.
     },
     {
       years: 5,
-      title: "Founder"
+      title: "Founder",
       income: 4,
       stress: 8,
       freeTime: 1,
@@ -162,7 +162,7 @@ Here's a sample dataset of one scenario. There are 9 total scenarios.
     },
     {
       years: 10,
-      title: "Founder of third company"
+      title: "Founder of third company",
       income: 7,
       stress: 9,
       freeTime: 2,
@@ -171,7 +171,7 @@ Here's a sample dataset of one scenario. There are 9 total scenarios.
     },
     {
       years: 30,
-      title: "Chairperson"
+      title: "Chairperson",
       income: 10,
       stress: 9,
       freeTime: 3,
