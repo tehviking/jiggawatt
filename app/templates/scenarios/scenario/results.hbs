@@ -1,7 +1,8 @@
 {{outlet}}
-RESULTS: Year {{selectedYear.years}}
 <br>
-TITLE: {{selectedYear.title}}
+Year {{selectedYear.years}}
+<br>
+{{selectedYear.title}}
 
 
 {{slider-control setYear='setYear' activeYear=year}}
@@ -13,6 +14,5 @@ TITLE: {{selectedYear.title}}
   {{stats-bar value=selectedYear.freeTime label="FREE TIME" class="results-bar"}}
 
   {{stats-bar value=selectedYear.satisfaction label="SATISFACTION" class="results-bar"}}
-
   {{stats-bar value=selectedYear.impact label="IMPACT" class="results-bar"}}
 </div>

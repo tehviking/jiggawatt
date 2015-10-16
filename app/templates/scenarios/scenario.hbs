@@ -1,3 +1,15 @@
-SCENARIO: {{model.name}}
-<br>
+<h1>{{model.name}}</h1>
+<div class="navigation">
+  {{#link-to 'scenarios.scenario.stats' model class="sub-nav"}}
+    STATS
+  {{/link-to}}
+
+  {{#link-to 'scenarios.scenario.inventory' model class="sub-nav"}}
+    INVENTORY
+  {{/link-to}}
+
+  {{#link-to 'scenarios.scenario.results' model class="sub-nav"}}
+    RESULTS
+  {{/link-to}}
+</div>
 {{outlet}}

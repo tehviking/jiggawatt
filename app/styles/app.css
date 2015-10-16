@@ -3,10 +3,18 @@
 body {
   background-color: black;
   color: white;
+  padding: 25px;;
+  margin: 0;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .stats-bar, .results-bar, .inventory-bar {
-  margin: 25px;
+  margin-bottom: 25px;
 }
 
 .stats-bar-empty {
@@ -17,7 +25,7 @@ body {
 
 .stats-bar-fill {
   fill: cyan;
-  transition: .2s;
+  transition: ease .5s;
 }
 
 .year-scale {
@@ -34,4 +42,37 @@ body {
   fill: cyan;
 }
 
-.year-scale
+.paths {
+  width: 110px;
+}
+
+.scenario-tile {
+  box-sizing: border-box;
+  border: 2px solid white;
+  width: 25px;
+  display: inline-block;
+  padding: 12px;
+  background-color: red;
+  border-radius: 100%;
+}
+
+.active {
+  background-color: cyan;
+}
+
+.navigation {
+  margin: 25px;
+}
+
+.sub-nav {
+  background-color: red;
+  border: 2px solid white;
+  margin: 6px;
+  padding: 10px;
+  height: 100px;
+  width: 100px;
+}
+
+.sub-nav.active {
+  background-color: aqua;
+}

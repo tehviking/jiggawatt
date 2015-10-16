@@ -1,1 +1,6 @@
+<div class="paths">
+  {{#each model as |scenario|}}
+    {{#link-to 'scenarios.scenario' scenario class="scenario-tile"}}{{/link-to}}
+  {{/each}}
+</div>
 {{outlet}}
