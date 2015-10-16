@@ -1,2 +1,9 @@
+<div class="paths">
+  {{#each model as |scenario|}}
+    {{#link-to 'scenarios.scenario' scenario class="scenario-tile"}}
+      <img src="/images/scenario-headshot-{{scenario.id}}.png" width="28" height="28">
+    {{/link-to}}
+  {{/each}}
+</div>
+
 {{outlet}}
-SCENARIOS
