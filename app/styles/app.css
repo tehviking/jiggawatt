@@ -1,0 +1,37 @@
+/* colors  */
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.stats-bar, .results-bar, .inventory-bar {
+  margin: 25px;
+}
+
+.stats-bar-empty {
+  fill: red;
+  stroke-width: 2;
+  stroke: white;
+}
+
+.stats-bar-fill {
+  fill: cyan;
+  transition: .2s;
+}
+
+.year-scale {
+  margin: 25px;
+}
+
+.year {
+  fill: red;
+  stroke: white;
+  stroke-width: 2;
+}
+
+.year-active {
+  fill: cyan;
+}
+
+.year-scale
