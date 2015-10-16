@@ -1,9 +1,9 @@
 {{outlet}}
-<br>
-Year {{selectedYear.years}}
-<br>
-{{selectedYear.title}}
-
+<h2 class="job-title">
+  Year {{selectedYear.years}}:
+  {{selectedYear.title}}
+</h2>
+<h4 class="track-name">Track: {{model.track}}</h4>
 
 {{slider-control setYear='setYear' activeYear=year}}
 <div class="inventory">
