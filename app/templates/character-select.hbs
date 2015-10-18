@@ -1,0 +1,10 @@
+<div class="character-select-screen">
+  <h1>SELECT A CHARACTER</h1>
+  <div class="character-select-tiles">
+    {{#each model as |scenario|}}
+      {{#link-to 'scenarios.scenario' scenario class=""}}
+        <img class="bordered-headshot character-select-tile" src="/images/scenario-anim-{{scenario.id}}.gif" width="160" height="160">
+      {{/link-to}}
+    {{/each}}
+  </div>
+</div>

@@ -131,3 +131,23 @@ a {
   line-height: 1.5em;
   margin: 20px 0;
 }
+
+.character-select-screen {
+  text-align: center;
+}
+
+.character-select-tiles {
+  max-width: 900px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.character-select-tile {
+  background-color: DarkSlateGray;
+  margin: 5px 0;
+}
+
+.character-select-tile:hover {
+  background-color: LightGrey;
+}
