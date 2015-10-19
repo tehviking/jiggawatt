@@ -1,18 +1,28 @@
 <div class="scenarios-content">
-  <img class="bordered-headshot" src="/images/scenario-headshot-{{model.id}}.png">
-  <div style="clear:both;"></div>
-  <div class="navigation">
-    {{#link-to 'scenarios.scenario.stats' model class="sub-nav"}}
-      STATS
-    {{/link-to}}
+  <div class="scenarios-info">
+    <img class="animated-character" src="/images/scenario-anim-{{model.id}}.gif">
+    <h3>"{{model.motto}}"</h3>
+    {{#if onResults}}
+      <div class="scenario-name">
+        <h1>{{model.name}}</h1>
+      </div>
+      <h4 class="track-name">Track: {{model.track}}</h4>
+    {{/if}}
+    <div class="navigation">
+      {{#link-to 'scenarios.scenario.stats' model class="sub-nav"}}
+        STATS
+      {{/link-to}}
 
-    {{#link-to 'scenarios.scenario.inventory' model class="sub-nav"}}
-      INVENTORY
-    {{/link-to}}
+      {{#link-to 'scenarios.scenario.inventory' model class="sub-nav"}}
+        INVENTORY
+      {{/link-to}}
 
-    {{#link-to 'scenarios.scenario.results' model class="sub-nav"}}
-      RESULTS
-    {{/link-to}}
+      {{#link-to 'scenarios.scenario.results' model class="sub-nav"}}
+        RESULTS
+      {{/link-to}}
+    </div>
   </div>
-  {{outlet}}
+  <div class="scenarios-graphs">
+    {{outlet}}
+  </div>
 </div>

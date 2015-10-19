@@ -67,7 +67,23 @@ a {
 }
 
 .scenarios-content {
+  margin-top: 25px;
+}
 
+.scenarios-info {
+  box-sizing: border-box;
+  display: float;
+  float: left;
+  width: 40%;
+  padding: 20px;
+}
+
+.scenarios-graphs {
+  box-sizing: border-box;
+  display: float;
+  float: left;
+  width: 60%;
+  padding: 20px;
 }
 
 .track-name {
@@ -99,6 +115,9 @@ a {
 
 .navigation {
   padding: 25px;
+  position: fixed;
+  top: 15px;
+  right: 0;
 }
 
 .sub-nav {
@@ -117,7 +136,9 @@ a {
   color: black;
 }
 
-
+.animated-character {
+  width: 220px;
+}
 
 .bordered-headshot {
   box-sizing: content-box;
