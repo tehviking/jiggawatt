@@ -3,10 +3,10 @@
   font-family: 'press_startregular';
   src: url('/fonts/prstart-webfont.eot');
   src: url('/fonts/prstart-webfont.eot?#iefix') format('embedded-opentype'),
-       url('/fonts/prstart-webfont.woff2') format('woff2'),
-       url('/fonts/prstart-webfont.woff') format('woff'),
-       url('/fonts/prstart-webfont.ttf') format('truetype'),
-       url('/fonts/prstart-webfont.svg#press_startregular') format('svg');
+  url('/fonts/prstart-webfont.woff2') format('woff2'),
+  url('/fonts/prstart-webfont.woff') format('woff'),
+  url('/fonts/prstart-webfont.ttf') format('truetype'),
+  url('/fonts/prstart-webfont.svg#press_startregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -165,4 +165,13 @@ a:hover, a:active, a.active {
 
 .character-select-tile:hover {
   background-color: LightGrey;
+}
+
+.increment-scale_control {
+  fill: white;
+  cursor: pointer;
+}
+
+.increment-scale_control-label {
+  cursor: pointer;
 }
