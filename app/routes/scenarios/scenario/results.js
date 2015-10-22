@@ -10,10 +10,10 @@ export default Ember.Route.extend({
     let currentIndex = this.get('currentIndex');
     let controller = this.get('controller');
     let updatedIndex = currentIndex + offset;
-    if(currentIndex >= 0 && offset >= 1 && updatedIndex < years.get('length')) {
+    if(offset === 1 && updatedIndex <= years.length - 1) {
       controller.set('year', years[updatedIndex]);
       this.set('currentIndex', updatedIndex);
-    } else if (currentIndex < years.get('length') && offset < 0 && updatedIndex >= 0) {
+    } else if (offset === -1 && updatedIndex >= 0) {
       controller.set('year', years[updatedIndex]);
       this.set('currentIndex', updatedIndex);
     }
@@ -33,5 +33,13 @@ export default Ember.Route.extend({
 
   deactivate() {
     $(window).off('keyup.ResultsRoute');
+  },
+
+  resetController: function(controller, isExiting, transition) {
+    this._super.apply(this, arguments);
+    if (isExiting) {
+      this.set('currentIndex', 0);
+      controller.set('year', 2);
+    }
   }
 });
