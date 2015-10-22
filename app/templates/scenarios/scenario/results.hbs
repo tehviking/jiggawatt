@@ -1,16 +1,13 @@
 <h2 class="job-title">
-  Year {{selectedYear.years}}:
+ Results Year {{selectedYear.years}}:
+<br>
   {{selectedYear.title}}
 </h2>
 <div class="results">
-
+  {{slider-control setYear='setYear' activeYear=year}}
   {{stats-bar value=selectedYear.income label="INCOME" class="results-bar"}}
-
   {{stats-bar value=selectedYear.stress label="STRESS" class="results-bar"}}
-
   {{stats-bar value=selectedYear.freeTime label="FREE TIME" class="results-bar"}}
-
   {{stats-bar value=selectedYear.satisfaction label="SATISFACTION" class="results-bar"}}
   {{stats-bar value=selectedYear.impact label="IMPACT" class="results-bar"}}
 </div>
-{{slider-control setYear='setYear' activeYear=year}}

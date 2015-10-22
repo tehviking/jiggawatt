@@ -1,0 +1,17 @@
+<svg  viewBox="0 0 220 12" version="1.1"
+      xmlns="http://www.w3.org/2000/svg">
+  <rect class="stats-bar-empty" x="10" y="0" width="200" height="12"  stroke-linecap="round"/>
+  <rect class="stats-bar-fill" x="11" y="1" width="{{convertedValue}}" height="10"  stroke-linecap="round"/>
+  <rect class="stats-bar-empty" x="0" y="0" width="10" height="12"  stroke-linecap="round" {{action 'decrement'}} class="increment-scale_control"/>
+  <rect class="stats-bar-empty" x="210" y="0" width="10" height="12"  stroke-linecap="round" {{action 'increment'}} class="increment-scale_control"/>
+
+  <text x="13" y="9" font-size="6">
+    {{label}}
+  </text>
+  <text x="212" y="9" font-size="6" class="increment-scale_control-label" {{action 'increment'}}>
+    +
+  </text>
+  <text x="2" y="9" font-size="6" class="increment-scale_control-label"  {{action 'decrement'}}>
+    -
+  </text>
+</svg>

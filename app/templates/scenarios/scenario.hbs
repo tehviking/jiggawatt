@@ -1,5 +1,22 @@
-<div class="scenarios-content">
-  <div class="scenarios-info">
+<div class="navigation row">
+  {{#link-to 'character-select' class="sub-nav"}}
+    HOME
+  {{/link-to}}
+
+  {{#link-to 'scenarios.scenario.stats' model class="sub-nav"}}
+    STATS
+  {{/link-to}}
+
+  {{#link-to 'scenarios.scenario.inventory' model class="sub-nav"}}
+    INVENTORY
+  {{/link-to}}
+
+  {{#link-to 'scenarios.scenario.results' model class="sub-nav"}}
+    RESULTS
+  {{/link-to}}
+</div>
+<div class="scenarios-content row">
+  <div class="scenarios-info col-xs-12 col-md-4">
     <img class="animated-character" src="/images/scenario-anim-{{model.id}}.gif">
     <h3>"{{model.motto}}"</h3>
     {{#if onResults}}
@@ -8,21 +25,8 @@
       </div>
       <h4 class="track-name">Track: {{model.track}}</h4>
     {{/if}}
-    <div class="navigation">
-      {{#link-to 'scenarios.scenario.stats' model class="sub-nav"}}
-        STATS
-      {{/link-to}}
-
-      {{#link-to 'scenarios.scenario.inventory' model class="sub-nav"}}
-        INVENTORY
-      {{/link-to}}
-
-      {{#link-to 'scenarios.scenario.results' model class="sub-nav"}}
-        RESULTS
-      {{/link-to}}
-    </div>
   </div>
-  <div class="scenarios-graphs">
+  <div class="scenarios-graphs col-xs-12 col-md-8">
     {{outlet}}
   </div>
 </div>
