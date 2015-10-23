@@ -36,6 +36,10 @@ a:hover, a:active, a.active {
   background-color: cyan;
 }
 
+.character-select-tiles a:hover {
+  background: none;
+}
+
 .stats-bar, .results-bar, .inventory-bar {
   margin-bottom: 25px;
 }
@@ -141,6 +145,13 @@ a:hover, a:active, a.active {
   border-image-slice: 30;
   border-image-repeat: repeat;
 }
+.bordered-headshot-small {
+  box-sizing: content-box;
+  border: 15px solid pink;
+  border-image-source: url("/images/scenario-headshot-frame.png");
+  border-image-slice: 30;
+  border-image-repeat: repeat;
+}
 
 .job-title {
   line-height: 1.5em;
@@ -152,20 +163,28 @@ a:hover, a:active, a.active {
 }
 
 .character-select-tiles {
-  max-width: 900px;
+  max-width: 600px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
+.character-select-tiles a:hover {
+  background: none;
+}
+
 .character-select-tile {
   background-color: DarkSlateGray;
   margin: 5px 0;
+  -webkit-filter: grayscale(50%);
 }
 
 .character-select-tile:hover {
-  background-color: LightGrey;
+  background-color: white;
+  -webkit-filter: grayscale(0);
+  -webkit-filter: brightness(1.25);
 }
+
 
 .increment-scale_control {
   fill: white;

@@ -6,7 +6,7 @@ export default [
     track: "technician",
     stats: {
       skill: 7,
-      synthesis: 2,
+      connection: 2,
       vision: 1
     },
     inventory: {
@@ -62,14 +62,14 @@ export default [
     track: "technician",
     stats: {
       skill: 7,
-      synthesis: 2,
+      connection: 2,
       vision: 1
     },
     inventory: {
       leverage: 8,
       ambition: 9,
       education: 3,
-      dedication: 5,
+      dedication: 8,
       community: 6
     },
     results: [
@@ -118,7 +118,7 @@ export default [
    track: "technician",
     stats: {
       skill: 7,
-      synthesis: 2,
+      connection: 2,
       vision: 1
     },
     inventory: {
@@ -174,7 +174,7 @@ export default [
     track: "manager",
     stats: {
       skill: 1,
-      synthesis: 9,
+      connection: 9,
       vision: 0
     },
     inventory: {
@@ -230,7 +230,7 @@ export default [
     track: "manager",
     stats: {
       skill: 0,
-      synthesis: 9,
+      connection: 9,
       vision: 1
     },
     inventory: {
@@ -286,7 +286,7 @@ export default [
     track: "manager",
     stats: {
       skill: 2,
-      synthesis: 7,
+      connection: 7,
       vision: 1
     },
     inventory: {
@@ -326,7 +326,7 @@ export default [
       },
       {
         years: 30,
-        title: "Chairperson",
+        title: "CTO",
         income: 9,
         stress: 8,
         freeTime: 3,
@@ -342,7 +342,7 @@ export default [
     track: "entrepreneur",
     stats: {
       skill: 3,
-      synthesis: 3,
+      connection: 3,
       vision: 6
     },
     inventory: {
@@ -359,7 +359,7 @@ export default [
         income: 1,
         stress: 5,
         freeTime: 4,
-        satisfaction: 4,
+        satisfaction: 1,
         impact: 2
       },
       {
@@ -398,7 +398,7 @@ export default [
     track: "entrepreneur",
     stats: {
       skill: 1,
-      synthesis: 2,
+      connection: 2,
       vision: 7
     },
     inventory: {
@@ -415,7 +415,7 @@ export default [
         income: 1,
         stress: 5,
         freeTime: 4,
-        satisfaction: 4,
+        satisfaction: 1,
         impact: 2
       },
       {
@@ -454,7 +454,7 @@ export default [
     track: "entrepreneur",
     stats: {
       skill: 0,
-      synthesis: 0,
+      connection: 0,
       vision: 10
     },
     inventory: {
@@ -479,7 +479,7 @@ export default [
         title: "Founder",
         income: 4,
         stress: 8,
-        freeTime: 1,
+        freeTime: 0,
         satisfaction: 7,
         impact: 5
       },

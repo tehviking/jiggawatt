@@ -11,7 +11,7 @@ Based on your stats and inventory, You will drop you into one of three pre-deter
 
 Stats include:
   - Skill (Desire to solve technical problems)
-  - Synthesis (Desire to connect existing solutions to problems)
+  - Connection (Desire to connect existing solutions to problems)
   - Vision (Desire to discover entirely new problems)
 
 Inventory includes:
@@ -47,12 +47,12 @@ Click start, and you're taken to the Character select screen. Choose your hero, 
 
 Now, we'll pick our hero's stats. You have 15 points to allocate to 3 stats.
 
-Keep in mind these are not the amount of skill, synthesis, or vision you start with, but will affect the maximum you can attain.
+Keep in mind these are not the amount of skill, connection, or vision you start with, but will affect the maximum you can attain.
 
 On a 1-10 scale, choose:
 
   - Tech. Skill
-  - Synthesis
+  - Connection
   - Vision 
 
 Click Choose Inventory to move on.
@@ -132,7 +132,7 @@ Here's a sample dataset of one scenario. There are 9 total scenarios.
     name: "Visionary CEO",
     stats: {
       skill: 2,
-      synthesis: 3,
+      connection: 3,
       vision: 10
     },
     inventory: {
