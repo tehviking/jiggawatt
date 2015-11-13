@@ -84,7 +84,7 @@ export default [
       },
       {
         years: 5,
-        title: "Senior Developer",
+        title: "Dev Evangelist",
         income: 5,
         stress: 8,
         freeTime: 1,
