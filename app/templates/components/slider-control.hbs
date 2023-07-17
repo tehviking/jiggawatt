@@ -1,10 +1,9 @@
-<svg  viewBox="0 0 300 20" version="1.1"
-      xmlns="http://www.w3.org/2000/svg" class="year-scale">
+<svg viewBox="0 0 300 20" version="1.1" xmlns="http://www.w3.org/2000/svg" class="year-scale">
   <rect class="stats-bar-empty" x="0" y="9" width="300" height="2"/>
-  <circle cx="34" cy="10" r="9" class="year {{if yearTwo "year-active"}}" {{action 'setYear' 2}}/>
-  <circle cx="54" cy="10" r="9" class="year {{if yearFive "year-active"}}" {{action 'setYear' 5}}/>
-  <circle cx="87" cy="10" r="9" class="year {{if yearTen "year-active"}}"fill="white" {{action 'setYear' 10}}/>
-  <circle cx="220" cy="10" r="9" class="year {{if yearThirty "year-active"}}"fill="white" {{action 'setYear' 30}}/>
+  <circle cx="34" cy="10" r="9" class="year {{if this.yearTwo "year-active"}}" {{action 'setYear' 2}}/>
+  <circle cx="54" cy="10" r="9" class="year {{if this.yearFive "year-active"}}" {{action 'setYear' 5}}/>
+  <circle cx="87" cy="10" r="9" class="year {{if this.yearTen "year-active"}}" fill="white" {{action 'setYear' 10}}/>
+  <circle cx="220" cy="10" r="9" class="year {{if this.yearThirty "year-active"}}" fill="white" {{action 'setYear' 30}}/>
 
   <text x="30" y="14" font-family="Verdana" font-size="11">2</text>
   <text x="50" y="14" font-family="Verdana" font-size="11">5</text>

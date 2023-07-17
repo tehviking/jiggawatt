@@ -1,8 +1,11 @@
-import Ember from 'ember';
+import Controller from '@ember/controller';
+import { computed } from '@ember/object';
 
-export default Ember.Controller.extend({
-  needs: ['application'],
-  onResults: Ember.computed('controllers.application.currentRouteName', function(){
-    return this.get('controllers.application.currentRouteName') === "scenarios.scenario.results";
-  })
-});
+export default class ScenarioController extends Controller {
+
+  @computed('application.currentRouteName')
+  get onResults() {
+    let currentRouteName = this.routeName;
+    return currentRouteName === 'scenarios.scenario.results';
+  }
+}

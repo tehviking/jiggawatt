@@ -1,12 +1,12 @@
 <h1>Character Inventory</h1>
 <div class="inventory">
-  {{increment-scale value=model.inventory.leverage label="LEVERAGE" class="inventory-bar"}}
+  <IncrementScale @value={{@model.inventory.leverage}} @label="LEVERAGE" class="inventory-bar" />
 
-  {{increment-scale value=model.inventory.ambition label="AMBITION" class="inventory-bar"}}
+  <IncrementScale @value={{@model.inventory.ambition}} @label="AMBITION" class="inventory-bar" />
 
-  {{increment-scale value=model.inventory.education label="EDUCATION" class="inventory-bar"}}
+  <IncrementScale @value={{@model.inventory.education}} @label="EDUCATION" class="inventory-bar" />
 
-  {{increment-scale value=model.inventory.dedication label="DEDICATION" class="inventory-bar"}}
+  <IncrementScale @value={{@model.inventory.dedication}} @label="DEDICATION" class="inventory-bar" />
 
-  {{increment-scale value=model.inventory.community label="COMMUNITY" class="inventory-bar"}}
+  <IncrementScale @value={{@model.inventory.community}} @label="COMMUNITY" class="inventory-bar" />
 </div>

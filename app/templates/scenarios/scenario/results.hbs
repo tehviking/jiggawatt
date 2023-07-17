@@ -1,13 +1,13 @@
 <h2 class="job-title">
- Results Year {{selectedYear.years}}:
-<br>
-  {{selectedYear.title}}
+  Results Year {{this.selectedYear.years}}:
+  <br>
+  {{this.selectedYear.title}}
 </h2>
 <div class="results">
-  {{slider-control setYear='setYear' activeYear=year}}
-  {{stats-bar value=selectedYear.income label="INCOME" class="results-bar"}}
-  {{stats-bar value=selectedYear.stress label="STRESS" class="results-bar"}}
-  {{stats-bar value=selectedYear.freeTime label="FREE TIME" class="results-bar"}}
-  {{stats-bar value=selectedYear.satisfaction label="SATISFACTION" class="results-bar"}}
-  {{stats-bar value=selectedYear.impact label="IMPACT" class="results-bar"}}
+  <SliderControl @setYear={{action 'setYear'}} @activeYear={{this.year}} />
+  <StatsBar @value={{this.selectedYear.income}} @label="INCOME" class="results-bar" />
+  <StatsBar @value={{this.selectedYear.stress}} @label="STRESS" class="results-bar" />
+  <StatsBar @value={{this.selectedYear.freeTime}} @label="FREE TIME" class="results-bar" />
+  <StatsBar @value={{this.selectedYear.satisfaction}} @label="SATISFACTION" class="results-bar" />
+  <StatsBar @value={{this.selectedYear.impact}} @label="IMPACT" class="results-bar" />
 </div>

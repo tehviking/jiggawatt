@@ -1,37 +1,56 @@
-import Ember from 'ember';
+import Route from '@ember/routing/route';
+import { action } from '@ember/object';
+import { inject as service } from '@ember/service';
+import { set } from '@ember/object';
 
-let $ = Ember.$;
+export default class ScenarioRoute extends Route {
+  @service router;
+  scenario = null;
+  handler = null;
 
-export default Ember.Route.extend({
-  model(params) {
-    this.scenario = this.modelFor('scenarios').findBy('id', parseInt(params.id));
-    return this.scenario;
-  },
-  afterModel: function(model, transition) {
-    // TODO: handle redirecting to correct nested route when switching scenario routes
-    this.transitionTo('scenarios.scenario.stats', model);
-  },
-  activate() {
-    $(window).on('keyup.ScenarioRoute', (e)=> {
-      switch (e.keyCode) {
-      case 83: // "s"
-        this.transitionTo("scenarios.scenario.stats", this.scenario);
-        break;
-      case 73: // "i"
-        this.transitionTo("scenarios.scenario.inventory", this.scenario);
-        break;
-      case 82: // "r"
-        this.transitionTo("scenarios.scenario.results", this.scenario);
-        break;
-      case 27: // "esc"
-        this.transitionTo("character-select");
-        break;
-      }
-    });
-  },
-
-  deactivate() {
-    $(window).off('keyup.ScenarioRoute');
+  constructor() {
+    super(...arguments);
+    this.handler = (e) => this.handleKeyUp(e);
   }
 
-});
+  model(params) {
+    this.scenario = this.modelFor('scenarios').findBy(
+      'id',
+      parseInt(params.id)
+    );
+    return this.scenario;
+  }
+
+  @action
+  afterModel() {
+    this.router.transitionTo('scenarios.scenario.stats', this.scenario);
+  }
+
+  @action
+  activate() {
+    window.addEventListener('keyup', this.handler);
+  }
+
+  @action
+  deactivate() {
+    window.removeEventListener('keyup', this.handler);
+  }
+
+  @action
+  handleKeyUp(e) {
+    switch (e.keyCode) {
+      case 83: // "s"
+        this.router.transitionTo('scenarios.scenario.stats', this.scenario);
+        break;
+      case 73: // "i"
+        this.router.transitionTo('scenarios.scenario.inventory', this.scenario);
+        break;
+      case 82: // "r"
+        this.router.transitionTo('scenarios.scenario.results', this.scenario);
+        break;
+      case 27: // "esc"
+        this.router.transitionTo('character-select');
+        break;
+    }
+  }
+}

@@ -1,21 +1,27 @@
-import Ember from 'ember';
+import Component from '@glimmer/component';
+import { action } from '@ember/object';
+import { tracked } from '@glimmer/tracking';
+import { computed } from '@ember/object';
 
-export default Ember.Component.extend({
-  convertedValue: Ember.computed('value', function(){
-    return Math.max(this.get('value') * 20 - 2, 0);
-  }),
-  actions: {
-    increment(){
-      let value = this.get('value');
-      if(value < 10){
-        this.set('value', value + 1);
-      }
-    },
-    decrement(){
-      let value = this.get('value');
-      if(0 < value){
-        this.set('value', value - 1);
-      }
+export default class IncrementScaleComponent extends Component {
+  @tracked
+  value = this.args.value || 0;
+
+  get convertedValue() {
+    return Math.max(this.value * 20 - 2, 0);
+  }
+
+  @action
+  increment() {
+    if (this.value < 10) {
+      this.value += 1;
     }
   }
-});
+
+  @action
+  decrement() {
+    if (this.value > 0) {
+      this.value -= 1;
+    }
+  }
+}
