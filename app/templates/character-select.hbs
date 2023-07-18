@@ -1,10 +1,10 @@
 <div class="character-select-screen">
   <h1>SELECT A CHARACTER</h1>
   <div class="character-select-tiles">
-    {{#each model as |scenario|}}
-      {{#link-to 'scenarios.scenario' scenario class=""}}
+    {{#each this.model as |scenario|}}
+      <LinkTo @route='scenarios.scenario.stats' @model={{scenario.id}}>
         <img class="bordered-headshot-small character-select-tile" src="/images/scenario-headshot-{{scenario.id}}.png" width="120" height="120">
-      {{/link-to}}
+      </LinkTo>
     {{/each}}
   </div>
 </div>

@@ -1,11 +1,12 @@
-import Ember from 'ember';
+import Route from '@ember/routing/route';
 import scenarios from '../data/scenariolist';
 import Scenario from '../models/scenario';
+import { A } from '@ember/array';
 
-export default Ember.Route.extend({
-  model(){
-    return scenarios.map(function(scenario){
+export default class ScenariosRoute extends Route {
+  model() {
+    return A(scenarios.map((scenario) => {
       return Scenario.create(scenario);
-    });
+    }));
   }
-});
+}

@@ -1,11 +1,9 @@
-import Ember from 'ember';
+import Route from '@ember/routing/route';
 import scenarios from '../data/scenariolist';
 import Scenario from '../models/scenario';
 
-export default Ember.Route.extend({
-  model(){
-    return scenarios.map(function(scenario){
-      return Scenario.create(scenario);
-    });
+export default class CharacterSelectRoute extends Route {
+  model() {
+    return scenarios.map((scenario) => Scenario.create(scenario));
   }
-});
+}

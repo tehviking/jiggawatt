@@ -1,7 +1,9 @@
-import Ember from 'ember';
+import Component from '@glimmer/component';
+import { computed } from '@ember/object';
 
-export default Ember.Component.extend({
-  convertedValue: Ember.computed('value', function(){
-    return Math.max(this.get('value') * 20 - 2, 0);
-  })
-});
+export default class MyComponent extends Component {
+  @computed('args.value')
+  get convertedValue() {
+    return Math.max(this.args.value * 20 - 2, 0);
+  }
+}

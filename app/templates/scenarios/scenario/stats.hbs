@@ -1,8 +1,8 @@
-<h1>Character Stats</h1>
+<h1>Character Stats for</h1>
 <div class="stats">
-  {{increment-scale value=model.stats.skill label="SKILL" class="stats-bar"}}
+  <IncrementScale @value={{@model.stats.skill}} @label="SKILL" class="stats-bar" />
 
-  {{increment-scale value=model.stats.connection label="CONNECTION" class="stats-bar"}}
+  <IncrementScale @value={{@model.stats.connection}} @label="CONNECTION" class="stats-bar" />
 
-  {{increment-scale value=model.stats.vision label="VISION" class="stats-bar"}}
+  <IncrementScale @value={{@model.stats.vision}} @label="VISION" class="stats-bar" />
 </div>
